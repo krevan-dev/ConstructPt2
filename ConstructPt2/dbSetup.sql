@@ -27,3 +27,14 @@ CREATE TABLE IF NOT EXISTS jobs(
   FOREIGN KEY(contractorId) REFERENCES contractors(id) ON DELETE CASCADE,
   FOREIGN KEY(companyId) REFERENCES companies(id) ON DELETE CASCADE
 ) default charset utf8;
+
+INSERT INTO jobs (contractorId, companyId)
+VALUES (1, 4);
+
+SELECT * FROM jobs;
+
+SELECT 
+
+FROM jobs j
+JOIN 
+WHERE 
